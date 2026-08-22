@@ -3,7 +3,7 @@
 
 CMakeFiles/HttpServer.dir/src/main.c.o
  /home/dev/Projects/HTTP-Server/src/main.c
- /home/dev/Projects/HTTP-Server/lib/server.h
+ /home/dev/Projects/HTTP-Server/include/server.h
  /usr/include/stdc-predef.h
 
 HttpServer
@@ -23,6 +23,6 @@ HttpServer
  /usr/lib/libc.so.6
  /usr/lib/libc_nonshared.a
  /home/dev/Projects/HTTP-Server/build/CMakeFiles/HttpServer.dir/src/main.c.o
- /home/dev/Projects/HTTP-Server/build/libread_file.a
+ /home/dev/Projects/HTTP-Server/build/libfile_parser.a
  /home/dev/Projects/HTTP-Server/build/libserver.a
 

@@ -8,27 +8,26 @@ project(
 	LANGUAGES	C
 )
 
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+# main file
+add_executable(
+	HttpServer	# name
+	src/main.c  # main file
+)
 
+# cmake configs
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
-add_library(server src/server.c)
-add_library(file_parser src/file_parser.c)
-
-target_include_directories(file_parser PUBLIC include)
+# include libraries & files
+add_library(server src/server/server.c)
 target_include_directories(server PUBLIC include)
 
-add_executable(
-	HttpServer	
 
-	src/main.c
-)
-
+# linker 
 target_link_libraries(
 	HttpServer 
 	PRIVATE
 
 	server	
-	file_parser	
 )
