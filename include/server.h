@@ -1,10 +1,6 @@
-#ifndef SOCKETS_H
-#define SOCKETS_H
+#ifndef SERVER_H 
+#define SERVER_H 
 
-struct SOCKET{
-	int port;
-};
-
-struct SOCKET create_socket(int port);
+void create_server(int port);
 
 #endif

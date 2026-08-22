@@ -21,7 +21,6 @@ HttpServer: /usr/lib/Scrt1.o \
   /usr/lib/libc.so.6 \
   /usr/lib/libc_nonshared.a \
   CMakeFiles/HttpServer.dir/src/main.c.o \
-  libfile_parser.a \
   libserver.a
 
 
@@ -38,8 +37,6 @@ CMakeFiles/HttpServer.dir/src/main.c.o:
 /usr/lib/libgcc_s.so.1:
 
 libserver.a:
-
-libfile_parser.a:
 
 /usr/include/stdc-predef.h:
 

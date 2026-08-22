@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/dev/Projects/HTTP-Server/include
 
-C_FLAGS = -std=gnu2x
+C_FLAGS = 
 

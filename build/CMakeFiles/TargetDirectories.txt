@@ -1,5 +1,4 @@
-/home/dev/Projects/HTTP-Server/build/CMakeFiles/server.dir
-/home/dev/Projects/HTTP-Server/build/CMakeFiles/file_parser.dir
 /home/dev/Projects/HTTP-Server/build/CMakeFiles/HttpServer.dir
+/home/dev/Projects/HTTP-Server/build/CMakeFiles/server.dir
 /home/dev/Projects/HTTP-Server/build/CMakeFiles/edit_cache.dir
 /home/dev/Projects/HTTP-Server/build/CMakeFiles/rebuild_cache.dir

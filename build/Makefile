@@ -124,32 +124,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named server
-
-# Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
-.PHONY : server
-
-# fast build rule for target.
-server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-.PHONY : server/fast
-
-#=============================================================================
-# Target rules for targets named file_parser
-
-# Build rule for target.
-file_parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file_parser
-.PHONY : file_parser
-
-# fast build rule for target.
-file_parser/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/build
-.PHONY : file_parser/fast
-
-#=============================================================================
 # Target rules for targets named HttpServer
 
 # Build rule for target.
@@ -162,29 +136,18 @@ HttpServer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpServer.dir/build.make CMakeFiles/HttpServer.dir/build
 .PHONY : HttpServer/fast
 
-src/file_parser.o: src/file_parser.c.o
-.PHONY : src/file_parser.o
+#=============================================================================
+# Target rules for targets named server
 
-# target to build an object file
-src/file_parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/src/file_parser.c.o
-.PHONY : src/file_parser.c.o
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
-src/file_parser.i: src/file_parser.c.i
-.PHONY : src/file_parser.i
-
-# target to preprocess a source file
-src/file_parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/src/file_parser.c.i
-.PHONY : src/file_parser.c.i
-
-src/file_parser.s: src/file_parser.c.s
-.PHONY : src/file_parser.s
-
-# target to generate assembly for a file
-src/file_parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/src/file_parser.c.s
-.PHONY : src/file_parser.c.s
+# fast build rule for target.
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -210,29 +173,29 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpServer.dir/build.make CMakeFiles/HttpServer.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/server.o: src/server.c.o
-.PHONY : src/server.o
+src/server/server.o: src/server/server.c.o
+.PHONY : src/server/server.o
 
 # target to build an object file
-src/server.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.c.o
-.PHONY : src/server.c.o
+src/server/server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server/server.c.o
+.PHONY : src/server/server.c.o
 
-src/server.i: src/server.c.i
-.PHONY : src/server.i
+src/server/server.i: src/server/server.c.i
+.PHONY : src/server/server.i
 
 # target to preprocess a source file
-src/server.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.c.i
-.PHONY : src/server.c.i
+src/server/server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server/server.c.i
+.PHONY : src/server/server.c.i
 
-src/server.s: src/server.c.s
-.PHONY : src/server.s
+src/server/server.s: src/server/server.c.s
+.PHONY : src/server/server.s
 
 # target to generate assembly for a file
-src/server.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.c.s
-.PHONY : src/server.c.s
+src/server/server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server/server.c.s
+.PHONY : src/server/server.c.s
 
 # Help Target
 help:
@@ -244,17 +207,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpServer"
-	@echo "... file_parser"
 	@echo "... server"
-	@echo "... src/file_parser.o"
-	@echo "... src/file_parser.i"
-	@echo "... src/file_parser.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/server.o"
-	@echo "... src/server.i"
-	@echo "... src/server.s"
+	@echo "... src/server/server.o"
+	@echo "... src/server/server.i"
+	@echo "... src/server/server.s"
 .PHONY : help
 
 

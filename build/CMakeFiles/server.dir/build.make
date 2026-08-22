@@ -72,28 +72,28 @@ include CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/codegen:
 .PHONY : CMakeFiles/server.dir/codegen
 
-CMakeFiles/server.dir/src/server.c.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/server.c.o: /home/dev/Projects/HTTP-Server/src/server.c
-CMakeFiles/server.dir/src/server.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/server.dir/src/server.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/server.c.o -MF CMakeFiles/server.dir/src/server.c.o.d -o CMakeFiles/server.dir/src/server.c.o -c /home/dev/Projects/HTTP-Server/src/server.c
+CMakeFiles/server.dir/src/server/server.c.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/server/server.c.o: /home/dev/Projects/HTTP-Server/src/server/server.c
+CMakeFiles/server.dir/src/server/server.c.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/server.dir/src/server/server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/server/server.c.o -MF CMakeFiles/server.dir/src/server/server.c.o.d -o CMakeFiles/server.dir/src/server/server.c.o -c /home/dev/Projects/HTTP-Server/src/server/server.c
 
-CMakeFiles/server.dir/src/server.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/server.dir/src/server.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Projects/HTTP-Server/src/server.c > CMakeFiles/server.dir/src/server.c.i
+CMakeFiles/server.dir/src/server/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/server.dir/src/server/server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Projects/HTTP-Server/src/server/server.c > CMakeFiles/server.dir/src/server/server.c.i
 
-CMakeFiles/server.dir/src/server.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server.dir/src/server.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Projects/HTTP-Server/src/server.c -o CMakeFiles/server.dir/src/server.c.s
+CMakeFiles/server.dir/src/server/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server.dir/src/server/server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Projects/HTTP-Server/src/server/server.c -o CMakeFiles/server.dir/src/server/server.c.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/src/server.c.o"
+"CMakeFiles/server.dir/src/server/server.c.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-libserver.a: CMakeFiles/server.dir/src/server.c.o
+libserver.a: CMakeFiles/server.dir/src/server/server.c.o
 libserver.a: CMakeFiles/server.dir/build.make
 libserver.a: CMakeFiles/server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libserver.a"

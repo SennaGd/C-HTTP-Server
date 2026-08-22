@@ -23,6 +23,5 @@ HttpServer
  /usr/lib/libc.so.6
  /usr/lib/libc_nonshared.a
  /home/dev/Projects/HTTP-Server/build/CMakeFiles/HttpServer.dir/src/main.c.o
- /home/dev/Projects/HTTP-Server/build/libfile_parser.a
  /home/dev/Projects/HTTP-Server/build/libserver.a
 

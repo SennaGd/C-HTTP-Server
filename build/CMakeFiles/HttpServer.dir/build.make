@@ -97,7 +97,6 @@ HttpServer: CMakeFiles/HttpServer.dir/src/main.c.o
 HttpServer: CMakeFiles/HttpServer.dir/build.make
 HttpServer: CMakeFiles/HttpServer.dir/compiler_depend.ts
 HttpServer: libserver.a
-HttpServer: libfile_parser.a
 HttpServer: CMakeFiles/HttpServer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable HttpServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HttpServer.dir/link.txt --verbose=$(VERBOSE)
