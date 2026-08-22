@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/dev/Projects/HTTP-Server/build",
+  "command": "/usr/bin/cc  -I/home/dev/Projects/HTTP-Server/include -std=gnu2x -o CMakeFiles/server.dir/src/server.c.o -c /home/dev/Projects/HTTP-Server/src/server.c",
+  "file": "/home/dev/Projects/HTTP-Server/src/server.c",
+  "output": "CMakeFiles/server.dir/src/server.c.o"
+},
+{
+  "directory": "/home/dev/Projects/HTTP-Server/build",
+  "command": "/usr/bin/cc  -I/home/dev/Projects/HTTP-Server/include -std=gnu2x -o CMakeFiles/file_parser.dir/src/file_parser.c.o -c /home/dev/Projects/HTTP-Server/src/file_parser.c",
+  "file": "/home/dev/Projects/HTTP-Server/src/file_parser.c",
+  "output": "CMakeFiles/file_parser.dir/src/file_parser.c.o"
+},
+{
+  "directory": "/home/dev/Projects/HTTP-Server/build",
+  "command": "/usr/bin/cc  -I/home/dev/Projects/HTTP-Server/include -std=gnu2x -o CMakeFiles/HttpServer.dir/src/main.c.o -c /home/dev/Projects/HTTP-Server/src/main.c",
+  "file": "/home/dev/Projects/HTTP-Server/src/main.c",
+  "output": "CMakeFiles/HttpServer.dir/src/main.c.o"
+}
+]
