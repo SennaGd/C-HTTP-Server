@@ -65,11 +65,13 @@ CMAKE_BINARY_DIR = /home/dev/Projects/HTTP-Server/build
 # The main recursive "all" target.
 all: CMakeFiles/HttpServer.dir/all
 all: CMakeFiles/server.dir/all
+all: CMakeFiles/parser.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/HttpServer.dir/codegen
 codegen: CMakeFiles/server.dir/codegen
+codegen: CMakeFiles/parser.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,6 +81,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/HttpServer.dir/clean
 clean: CMakeFiles/server.dir/clean
+clean: CMakeFiles/parser.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -120,7 +123,7 @@ CMakeFiles/HttpServer.dir/clean:
 CMakeFiles/server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=3,4 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=5,6 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,13 +140,45 @@ server: CMakeFiles/server.dir/rule
 # codegen rule for target.
 CMakeFiles/server.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=3,4 "Finished codegen for target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=5,6 "Finished codegen for target server"
 .PHONY : CMakeFiles/server.dir/codegen
 
 # clean rule for target.
 CMakeFiles/server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
 .PHONY : CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/parser.dir
+
+# All Build rule for target.
+CMakeFiles/parser.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=3,4 "Built target parser"
+.PHONY : CMakeFiles/parser.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/parser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/HTTP-Server/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/parser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/HTTP-Server/build/CMakeFiles 0
+.PHONY : CMakeFiles/parser.dir/rule
+
+# Convenience name for target.
+parser: CMakeFiles/parser.dir/rule
+.PHONY : parser
+
+# codegen rule for target.
+CMakeFiles/parser.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=3,4 "Finished codegen for target parser"
+.PHONY : CMakeFiles/parser.dir/codegen
+
+# clean rule for target.
+CMakeFiles/parser.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/clean
+.PHONY : CMakeFiles/parser.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

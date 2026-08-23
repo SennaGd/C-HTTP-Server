@@ -21,8 +21,10 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # include libraries & files
 add_library(server src/server/server.c)
-target_include_directories(server PUBLIC include)
+add_library(parser src/parser/parser.c)
 
+target_include_directories(server PUBLIC include)
+target_include_directories(parser PUBLIC include)
 
 # linker 
 target_link_libraries(

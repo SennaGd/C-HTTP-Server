@@ -149,6 +149,19 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+#=============================================================================
+# Target rules for targets named parser
+
+# Build rule for target.
+parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser
+.PHONY : parser
+
+# fast build rule for target.
+parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
+.PHONY : parser/fast
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -172,6 +185,30 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpServer.dir/build.make CMakeFiles/HttpServer.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/parser/parser.o: src/parser/parser.c.o
+.PHONY : src/parser/parser.o
+
+# target to build an object file
+src/parser/parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/parser/parser.c.o
+.PHONY : src/parser/parser.c.o
+
+src/parser/parser.i: src/parser/parser.c.i
+.PHONY : src/parser/parser.i
+
+# target to preprocess a source file
+src/parser/parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/parser/parser.c.i
+.PHONY : src/parser/parser.c.i
+
+src/parser/parser.s: src/parser/parser.c.s
+.PHONY : src/parser/parser.s
+
+# target to generate assembly for a file
+src/parser/parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/parser/parser.c.s
+.PHONY : src/parser/parser.c.s
 
 src/server/server.o: src/server/server.c.o
 .PHONY : src/server/server.o
@@ -207,10 +244,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpServer"
+	@echo "... parser"
 	@echo "... server"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser/parser.o"
+	@echo "... src/parser/parser.i"
+	@echo "... src/parser/parser.s"
 	@echo "... src/server/server.o"
 	@echo "... src/server/server.i"
 	@echo "... src/server/server.s"

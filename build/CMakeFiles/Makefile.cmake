@@ -49,4 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/HttpServer.dir/DependInfo.cmake"
   "CMakeFiles/server.dir/DependInfo.cmake"
+  "CMakeFiles/parser.dir/DependInfo.cmake"
   )
