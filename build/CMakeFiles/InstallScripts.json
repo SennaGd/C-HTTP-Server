@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/dev/Projects/HTTP-Server/build/cmake_install.cmake"
+		"/home/dev/Projects/C-HTTP-Server/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

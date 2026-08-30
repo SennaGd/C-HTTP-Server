@@ -1,1 +1,1 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/HttpServer.dir/link.d CMakeFiles/HttpServer.dir/src/main.c.o -o HttpServer  libserver.a
+/usr/sbin/cc -Wl,--dependency-file=CMakeFiles/HttpServer.dir/link.d CMakeFiles/HttpServer.dir/src/main.c.o -o HttpServer  libserver.a libparser.a

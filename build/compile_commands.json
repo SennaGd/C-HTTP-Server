@@ -1,14 +1,20 @@
 [
 {
-  "directory": "/home/dev/Projects/HTTP-Server/build",
-  "command": "/usr/bin/cc  -I/home/dev/Projects/HTTP-Server/include -std=gnu2x -o CMakeFiles/server.dir/src/server/server.c.o -c /home/dev/Projects/HTTP-Server/src/server/server.c",
-  "file": "/home/dev/Projects/HTTP-Server/src/server/server.c",
+  "directory": "/home/dev/Projects/C-HTTP-Server/build",
+  "command": "/usr/sbin/cc  -I/home/dev/Projects/C-HTTP-Server/include -std=gnu2x -o CMakeFiles/server.dir/src/server/server.c.o -c /home/dev/Projects/C-HTTP-Server/src/server/server.c",
+  "file": "/home/dev/Projects/C-HTTP-Server/src/server/server.c",
   "output": "CMakeFiles/server.dir/src/server/server.c.o"
 },
 {
-  "directory": "/home/dev/Projects/HTTP-Server/build",
-  "command": "/usr/bin/cc  -I/home/dev/Projects/HTTP-Server/include -std=gnu2x -o CMakeFiles/parser.dir/src/parser/parser.c.o -c /home/dev/Projects/HTTP-Server/src/parser/parser.c",
-  "file": "/home/dev/Projects/HTTP-Server/src/parser/parser.c",
+  "directory": "/home/dev/Projects/C-HTTP-Server/build",
+  "command": "/usr/sbin/cc  -I/home/dev/Projects/C-HTTP-Server/include -std=gnu2x -o CMakeFiles/parser.dir/src/parser/parser.c.o -c /home/dev/Projects/C-HTTP-Server/src/parser/parser.c",
+  "file": "/home/dev/Projects/C-HTTP-Server/src/parser/parser.c",
   "output": "CMakeFiles/parser.dir/src/parser/parser.c.o"
+},
+{
+  "directory": "/home/dev/Projects/C-HTTP-Server/build",
+  "command": "/usr/sbin/cc  -I/home/dev/Projects/C-HTTP-Server/html -I/home/dev/Projects/C-HTTP-Server/include -std=gnu2x -o CMakeFiles/HttpServer.dir/src/main.c.o -c /home/dev/Projects/C-HTTP-Server/src/main.c",
+  "file": "/home/dev/Projects/C-HTTP-Server/src/main.c",
+  "output": "CMakeFiles/HttpServer.dir/src/main.c.o"
 }
 ]

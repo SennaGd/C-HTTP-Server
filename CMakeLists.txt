@@ -8,23 +8,30 @@ project(
 	LANGUAGES	C
 )
 
+# cmake configs
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_C_STANDARD 23)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+
 # main file
 add_executable(
 	HttpServer	# name
 	src/main.c  # main file
 )
 
-# cmake configs
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_C_STANDARD 23)
-set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # include libraries & files
 add_library(server src/server/server.c)
-add_library(parser src/parser/parser.c)
-
 target_include_directories(server PUBLIC include)
+
+add_library(parser src/parser/parser.c)
 target_include_directories(parser PUBLIC include)
+
+
+# include html directory
+target_include_directories(HttpServer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/html)
+
 
 # linker 
 target_link_libraries(
@@ -32,4 +39,5 @@ target_link_libraries(
 	PRIVATE
 
 	server	
+	parser
 )

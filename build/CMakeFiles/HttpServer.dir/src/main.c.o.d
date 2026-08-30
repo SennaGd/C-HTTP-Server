@@ -1,6 +1,6 @@
 CMakeFiles/HttpServer.dir/src/main.c.o: \
- /home/dev/Projects/HTTP-Server/src/main.c /usr/include/stdc-predef.h \
- /home/dev/Projects/HTTP-Server/include/server.h \
+ /home/dev/Projects/C-HTTP-Server/src/main.c /usr/include/stdc-predef.h \
+ /home/dev/Projects/C-HTTP-Server/include/server.h \
  /usr/include/bits/sockaddr.h /usr/include/netinet/in.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -31,11 +31,4 @@ CMakeFiles/HttpServer.dir/src/main.c.o: \
  /usr/include/asm-generic/bitsperlong.h /usr/include/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
- /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h
+ /home/dev/Projects/C-HTTP-Server/include/parser.h
