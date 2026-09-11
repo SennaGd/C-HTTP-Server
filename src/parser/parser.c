@@ -1,8 +1,11 @@
 #include <stdio.h>
 void read_file() {
-	FILE *fptr;	
+	FILE *fptr = NULL;	
 	
 	fptr = fopen("html/index.html", "r");
+	if (fptr == NULL) {
+		printf("error reading file");
+	}
 	
 	char file_buf[100];
 

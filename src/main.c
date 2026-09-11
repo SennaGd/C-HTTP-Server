@@ -3,7 +3,7 @@
 
 int main(){
 	read_file();
-	create_server(9003);
+	create_server(9001);
 
 	return 0;
 }

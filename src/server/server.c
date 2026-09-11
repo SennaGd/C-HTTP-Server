@@ -2,6 +2,7 @@
 #include <netinet/in.h>
 #include <stdlib.h>
 #include <sys/socket.h>
+#include <unistd.h>
 
 #include "server.h"
 #include "socket.c"
@@ -52,7 +53,16 @@ void create_server(int port)
 		int client_socket = accept(s_socket,NULL,NULL);
 
 		char server_message[256] = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
-		send(client_socket, server_message, sizeof(server_message), 0);
+		char server_message2[256] = "<a href='welcome'>clickme</a>";
+		char *client_buff;
+			
+		read(client_socket, &client_buff, sizeof(&client_buff));
+		if (sizeof(client_buff) != 0){
+			// printf("%s", client_buff);
+			send(client_socket, server_message, sizeof(server_message), 0);
+			send(client_socket, server_message2, sizeof(server_message2), 0);
+		}
+		
 		close(client_socket);
 	}
 }

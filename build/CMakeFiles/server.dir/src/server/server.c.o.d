@@ -35,7 +35,10 @@ CMakeFiles/server.dir/src/server/server.c.o: \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/alloca.h /usr/include/bits/types/once_flag.h \
- /usr/include/bits/stdlib-float.h \
+ /usr/include/bits/stdlib-float.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /home/dev/Projects/C-HTTP-Server/include/server.h \
  /home/dev/Projects/C-HTTP-Server/src/server/socket.c \
  /usr/include/stdio.h \
@@ -44,7 +47,4 @@ CMakeFiles/server.dir/src/server/server.c.o: \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h
+ /usr/include/bits/stdio_lim.h
