@@ -1,5 +1,5 @@
 CMakeFiles/server.dir/src/server/server.c.o: \
- /home/dev/Projects/HTTP-Server/src/server/server.c \
+ /home/dev/Projects/C-HTTP-Server/src/server/server.c \
  /usr/include/stdc-predef.h /usr/include/bits/sockaddr.h \
  /usr/include/netinet/in.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -35,15 +35,16 @@ CMakeFiles/server.dir/src/server/server.c.o: \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/alloca.h /usr/include/bits/types/once_flag.h \
- /usr/include/bits/stdlib-float.h \
- /home/dev/Projects/HTTP-Server/include/server.h \
- /home/dev/Projects/HTTP-Server/src/server/socket.c /usr/include/stdio.h \
+ /usr/include/bits/stdlib-float.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /home/dev/Projects/C-HTTP-Server/include/server.h \
+ /home/dev/Projects/C-HTTP-Server/src/server/socket.c \
+ /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
  /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h
+ /usr/include/bits/stdio_lim.h

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/sbin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/sbin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/Projects/HTTP-Server
+CMAKE_SOURCE_DIR = /home/dev/Projects/C-HTTP-Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/Projects/HTTP-Server/build
+CMAKE_BINARY_DIR = /home/dev/Projects/C-HTTP-Server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/parser.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/parser.dir/codegen:
 .PHONY : CMakeFiles/parser.dir/codegen
 
 CMakeFiles/parser.dir/src/parser/parser.c.o: CMakeFiles/parser.dir/flags.make
-CMakeFiles/parser.dir/src/parser/parser.c.o: /home/dev/Projects/HTTP-Server/src/parser/parser.c
+CMakeFiles/parser.dir/src/parser/parser.c.o: /home/dev/Projects/C-HTTP-Server/src/parser/parser.c
 CMakeFiles/parser.dir/src/parser/parser.c.o: CMakeFiles/parser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/parser.dir/src/parser/parser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/parser.dir/src/parser/parser.c.o -MF CMakeFiles/parser.dir/src/parser/parser.c.o.d -o CMakeFiles/parser.dir/src/parser/parser.c.o -c /home/dev/Projects/HTTP-Server/src/parser/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/C-HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/parser.dir/src/parser/parser.c.o"
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/parser.dir/src/parser/parser.c.o -MF CMakeFiles/parser.dir/src/parser/parser.c.o.d -o CMakeFiles/parser.dir/src/parser/parser.c.o -c /home/dev/Projects/C-HTTP-Server/src/parser/parser.c
 
 CMakeFiles/parser.dir/src/parser/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/parser.dir/src/parser/parser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Projects/HTTP-Server/src/parser/parser.c > CMakeFiles/parser.dir/src/parser/parser.c.i
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Projects/C-HTTP-Server/src/parser/parser.c > CMakeFiles/parser.dir/src/parser/parser.c.i
 
 CMakeFiles/parser.dir/src/parser/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/parser.dir/src/parser/parser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Projects/HTTP-Server/src/parser/parser.c -o CMakeFiles/parser.dir/src/parser/parser.c.s
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Projects/C-HTTP-Server/src/parser/parser.c -o CMakeFiles/parser.dir/src/parser/parser.c.s
 
 # Object files for target parser
 parser_OBJECTS = \
@@ -96,7 +96,7 @@ parser_EXTERNAL_OBJECTS =
 libparser.a: CMakeFiles/parser.dir/src/parser/parser.c.o
 libparser.a: CMakeFiles/parser.dir/build.make
 libparser.a: CMakeFiles/parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libparser.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/C-HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libparser.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/parser.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/parser.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/parser.dir/clean:
 .PHONY : CMakeFiles/parser.dir/clean
 
 CMakeFiles/parser.dir/depend:
-	cd /home/dev/Projects/HTTP-Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/Projects/HTTP-Server /home/dev/Projects/HTTP-Server /home/dev/Projects/HTTP-Server/build /home/dev/Projects/HTTP-Server/build /home/dev/Projects/HTTP-Server/build/CMakeFiles/parser.dir/DependInfo.cmake "--color=$(COLOR)" parser
+	cd /home/dev/Projects/C-HTTP-Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/Projects/C-HTTP-Server /home/dev/Projects/C-HTTP-Server /home/dev/Projects/C-HTTP-Server/build /home/dev/Projects/C-HTTP-Server/build /home/dev/Projects/C-HTTP-Server/build/CMakeFiles/parser.dir/DependInfo.cmake "--color=$(COLOR)" parser
 .PHONY : CMakeFiles/parser.dir/depend
 

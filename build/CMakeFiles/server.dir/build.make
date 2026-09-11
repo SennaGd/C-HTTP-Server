@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/sbin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /usr/sbin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/Projects/HTTP-Server
+CMAKE_SOURCE_DIR = /home/dev/Projects/C-HTTP-Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/Projects/HTTP-Server/build
+CMAKE_BINARY_DIR = /home/dev/Projects/C-HTTP-Server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/server.dir/codegen:
 .PHONY : CMakeFiles/server.dir/codegen
 
 CMakeFiles/server.dir/src/server/server.c.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/server/server.c.o: /home/dev/Projects/HTTP-Server/src/server/server.c
+CMakeFiles/server.dir/src/server/server.c.o: /home/dev/Projects/C-HTTP-Server/src/server/server.c
 CMakeFiles/server.dir/src/server/server.c.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/server.dir/src/server/server.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/server/server.c.o -MF CMakeFiles/server.dir/src/server/server.c.o.d -o CMakeFiles/server.dir/src/server/server.c.o -c /home/dev/Projects/HTTP-Server/src/server/server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dev/Projects/C-HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/server.dir/src/server/server.c.o"
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/server.dir/src/server/server.c.o -MF CMakeFiles/server.dir/src/server/server.c.o.d -o CMakeFiles/server.dir/src/server/server.c.o -c /home/dev/Projects/C-HTTP-Server/src/server/server.c
 
 CMakeFiles/server.dir/src/server/server.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/server.dir/src/server/server.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Projects/HTTP-Server/src/server/server.c > CMakeFiles/server.dir/src/server/server.c.i
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/dev/Projects/C-HTTP-Server/src/server/server.c > CMakeFiles/server.dir/src/server/server.c.i
 
 CMakeFiles/server.dir/src/server/server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/server.dir/src/server/server.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Projects/HTTP-Server/src/server/server.c -o CMakeFiles/server.dir/src/server/server.c.s
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/dev/Projects/C-HTTP-Server/src/server/server.c -o CMakeFiles/server.dir/src/server/server.c.s
 
 # Object files for target server
 server_OBJECTS = \
@@ -96,7 +96,7 @@ server_EXTERNAL_OBJECTS =
 libserver.a: CMakeFiles/server.dir/src/server/server.c.o
 libserver.a: CMakeFiles/server.dir/build.make
 libserver.a: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libserver.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dev/Projects/C-HTTP-Server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libserver.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/server.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/dev/Projects/HTTP-Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/Projects/HTTP-Server /home/dev/Projects/HTTP-Server /home/dev/Projects/HTTP-Server/build /home/dev/Projects/HTTP-Server/build /home/dev/Projects/HTTP-Server/build/CMakeFiles/server.dir/DependInfo.cmake "--color=$(COLOR)" server
+	cd /home/dev/Projects/C-HTTP-Server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev/Projects/C-HTTP-Server /home/dev/Projects/C-HTTP-Server /home/dev/Projects/C-HTTP-Server/build /home/dev/Projects/C-HTTP-Server/build /home/dev/Projects/C-HTTP-Server/build/CMakeFiles/server.dir/DependInfo.cmake "--color=$(COLOR)" server
 .PHONY : CMakeFiles/server.dir/depend
 
