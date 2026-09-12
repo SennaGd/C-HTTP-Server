@@ -4,7 +4,9 @@ HttpServer: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   CMakeFiles/HttpServer.dir/src/main.c.o \
   libserver.a \
-  libparser.a \
+  libfile_parser.a \
+  libroute_handler.a \
+  libroutes.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
@@ -47,7 +49,11 @@ CMakeFiles/HttpServer.dir/src/main.c.o:
 
 libserver.a:
 
-libparser.a:
+libfile_parser.a:
+
+libroute_handler.a:
+
+libroutes.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
 

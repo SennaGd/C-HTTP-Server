@@ -20,43 +20,40 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/sbin/"
       - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/bin/"
     searched_directories:
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/uname"
+      - "/home/dev/.pyenv/shims/uname"
       - "/home/dev/.pyenv/bin/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
-    found: "/usr/sbin/uname"
+    found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "message-v1"
     backtrace:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      The system is: Linux - 7.2.0-1-cachyos - x86_64
+      The system is: Linux - 7.1.8-1-cachyos - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -78,47 +75,41 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/sbin/"
       - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
     searched_directories:
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gmake"
+      - "/home/dev/.pyenv/shims/gmake"
       - "/home/dev/.pyenv/bin/gmake"
       - "/usr/local/sbin/gmake"
       - "/usr/local/bin/gmake"
-      - "/usr/sbin/gmake"
       - "/usr/bin/gmake"
-      - "/sbin/gmake"
-      - "/bin/gmake"
       - "/usr/bin/site_perl/gmake"
       - "/usr/bin/vendor_perl/gmake"
       - "/usr/bin/core_perl/gmake"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/make"
+      - "/var/lib/snapd/snap/bin/gmake"
+      - "/home/dev/.pyenv/shims/make"
       - "/home/dev/.pyenv/bin/make"
       - "/usr/local/sbin/make"
       - "/usr/local/bin/make"
-    found: "/usr/sbin/make"
+    found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -145,36 +136,32 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/sbin/"
       - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
     searched_directories:
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/cc"
+      - "/home/dev/.pyenv/shims/cc"
       - "/home/dev/.pyenv/bin/cc"
       - "/usr/local/sbin/cc"
       - "/usr/local/bin/cc"
-    found: "/usr/sbin/cc"
+    found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -202,17 +189,15 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -222,7 +207,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: /usr/sbin/cc 
+      Compiler: /usr/bin/cc 
       Build flags: 
       Id flags:  
       
@@ -233,7 +218,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/dev/Projects/C-HTTP-Server/build/CMakeFiles/4.4.2/CompilerIdC/a.out
+        /home/dev/Projects/HTTP-Server/build/CMakeFiles/4.4.2/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -255,31 +240,27 @@ events:
     names:
       - "ar"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/ar"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -300,31 +281,27 @@ events:
     names:
       - "ranlib"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/ranlib"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -345,31 +322,27 @@ events:
     names:
       - "strip"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/strip"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -390,31 +363,27 @@ events:
     names:
       - "ld"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/ld"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -435,31 +404,27 @@ events:
     names:
       - "nm"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/nm"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -480,31 +445,27 @@ events:
     names:
       - "objdump"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/objdump"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -525,31 +486,27 @@ events:
     names:
       - "objcopy"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/objcopy"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -570,31 +527,27 @@ events:
     names:
       - "readelf"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/readelf"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -615,43 +568,37 @@ events:
     names:
       - "dlltool"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
     searched_directories:
-      - "/usr/sbin/dlltool"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/dlltool"
+      - "/usr/bin/dlltool"
+      - "/home/dev/.pyenv/shims/dlltool"
       - "/home/dev/.pyenv/bin/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
-      - "/usr/bin/dlltool"
-      - "/sbin/dlltool"
-      - "/bin/dlltool"
       - "/usr/bin/site_perl/dlltool"
       - "/usr/bin/vendor_perl/dlltool"
       - "/usr/bin/core_perl/dlltool"
+      - "/var/lib/snapd/snap/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -672,31 +619,27 @@ events:
     names:
       - "addr2line"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-    found: "/usr/sbin/addr2line"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -717,43 +660,37 @@ events:
     names:
       - "tapi"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
     searched_directories:
-      - "/usr/sbin/tapi"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/tapi"
+      - "/usr/bin/tapi"
+      - "/home/dev/.pyenv/shims/tapi"
       - "/home/dev/.pyenv/bin/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
-      - "/usr/bin/tapi"
-      - "/sbin/tapi"
-      - "/bin/tapi"
       - "/usr/bin/site_perl/tapi"
       - "/usr/bin/vendor_perl/tapi"
       - "/usr/bin/core_perl/tapi"
+      - "/var/lib/snapd/snap/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -777,65 +714,55 @@ events:
       - "gcc-ar16"
       - "gcc-ar"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
     searched_directories:
-      - "/usr/sbin/gcc-ar-16.2"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16.2"
+      - "/home/dev/.pyenv/shims/gcc-ar-16.2"
       - "/home/dev/.pyenv/bin/gcc-ar-16.2"
       - "/usr/local/sbin/gcc-ar-16.2"
       - "/usr/local/bin/gcc-ar-16.2"
-      - "/usr/bin/gcc-ar-16.2"
-      - "/sbin/gcc-ar-16.2"
-      - "/bin/gcc-ar-16.2"
       - "/usr/bin/site_perl/gcc-ar-16.2"
       - "/usr/bin/vendor_perl/gcc-ar-16.2"
       - "/usr/bin/core_perl/gcc-ar-16.2"
-      - "/usr/sbin/gcc-ar-16"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gcc-ar-16"
+      - "/var/lib/snapd/snap/bin/gcc-ar-16.2"
+      - "/usr/bin/gcc-ar-16"
+      - "/home/dev/.pyenv/shims/gcc-ar-16"
       - "/home/dev/.pyenv/bin/gcc-ar-16"
       - "/usr/local/sbin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
-      - "/usr/bin/gcc-ar-16"
-      - "/sbin/gcc-ar-16"
-      - "/bin/gcc-ar-16"
       - "/usr/bin/site_perl/gcc-ar-16"
       - "/usr/bin/vendor_perl/gcc-ar-16"
       - "/usr/bin/core_perl/gcc-ar-16"
-      - "/usr/sbin/gcc-ar16"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gcc-ar16"
+      - "/var/lib/snapd/snap/bin/gcc-ar-16"
+      - "/usr/bin/gcc-ar16"
+      - "/home/dev/.pyenv/shims/gcc-ar16"
       - "/home/dev/.pyenv/bin/gcc-ar16"
       - "/usr/local/sbin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
-      - "/usr/bin/gcc-ar16"
-      - "/sbin/gcc-ar16"
-      - "/bin/gcc-ar16"
       - "/usr/bin/site_perl/gcc-ar16"
       - "/usr/bin/vendor_perl/gcc-ar16"
       - "/usr/bin/core_perl/gcc-ar16"
-    found: "/usr/sbin/gcc-ar"
+      - "/var/lib/snapd/snap/bin/gcc-ar16"
+    found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -859,65 +786,55 @@ events:
       - "gcc-ranlib16"
       - "gcc-ranlib"
     candidate_directories:
-      - "/usr/sbin/"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/"
+      - "/usr/bin/"
+      - "/home/dev/.pyenv/shims/"
       - "/home/dev/.pyenv/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
     searched_directories:
-      - "/usr/sbin/gcc-ranlib-16.2"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16.2"
+      - "/home/dev/.pyenv/shims/gcc-ranlib-16.2"
       - "/home/dev/.pyenv/bin/gcc-ranlib-16.2"
       - "/usr/local/sbin/gcc-ranlib-16.2"
       - "/usr/local/bin/gcc-ranlib-16.2"
-      - "/usr/bin/gcc-ranlib-16.2"
-      - "/sbin/gcc-ranlib-16.2"
-      - "/bin/gcc-ranlib-16.2"
       - "/usr/bin/site_perl/gcc-ranlib-16.2"
       - "/usr/bin/vendor_perl/gcc-ranlib-16.2"
       - "/usr/bin/core_perl/gcc-ranlib-16.2"
-      - "/usr/sbin/gcc-ranlib-16"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gcc-ranlib-16"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib-16.2"
+      - "/usr/bin/gcc-ranlib-16"
+      - "/home/dev/.pyenv/shims/gcc-ranlib-16"
       - "/home/dev/.pyenv/bin/gcc-ranlib-16"
       - "/usr/local/sbin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
-      - "/usr/bin/gcc-ranlib-16"
-      - "/sbin/gcc-ranlib-16"
-      - "/bin/gcc-ranlib-16"
       - "/usr/bin/site_perl/gcc-ranlib-16"
       - "/usr/bin/vendor_perl/gcc-ranlib-16"
       - "/usr/bin/core_perl/gcc-ranlib-16"
-      - "/usr/sbin/gcc-ranlib16"
-      - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims/gcc-ranlib16"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib-16"
+      - "/usr/bin/gcc-ranlib16"
+      - "/home/dev/.pyenv/shims/gcc-ranlib16"
       - "/home/dev/.pyenv/bin/gcc-ranlib16"
       - "/usr/local/sbin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
-      - "/usr/bin/gcc-ranlib16"
-      - "/sbin/gcc-ranlib16"
-      - "/bin/gcc-ranlib16"
       - "/usr/bin/site_perl/gcc-ranlib16"
       - "/usr/bin/vendor_perl/gcc-ranlib16"
       - "/usr/bin/core_perl/gcc-ranlib16"
-    found: "/usr/sbin/gcc-ranlib"
+      - "/var/lib/snapd/snap/bin/gcc-ranlib16"
+    found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/dev/.pyenvtest -d /home/dev/.pyenv/bin/shims"
+        - "/home/dev/.pyenv/shims"
         - "/home/dev/.pyenv/bin"
         - "/usr/local/sbin"
         - "/usr/local/bin"
-        - "/usr/sbin"
         - "/usr/bin"
-        - "/sbin"
-        - "/bin"
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -927,8 +844,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw"
-      binary: "/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw"
+      source: "/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E"
+      binary: "/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -937,22 +854,22 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw'
+        Change Dir: '/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E'
         
-        Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3cfba/fast
-        /usr/sbin/make  -f CMakeFiles/cmTC_3cfba.dir/build.make CMakeFiles/cmTC_3cfba.dir/build
-        make[1]: Entering directory '/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw'
-        Building C object CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o
-        /usr/sbin/cc   -v -o CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_34464/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_34464.dir/build.make CMakeFiles/cmTC_34464.dir/build
+        make[1]: Entering directory '/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E'
+        Building C object CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
-        COLLECT_GCC=/usr/sbin/cc
+        COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
         Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3cfba.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3cfba.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccecToEc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_34464.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_34464.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccKtAWhf.s
         GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -966,16 +883,16 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: a48c0af3a2776f11d2f29c8a4f4a097f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3cfba.dir/'
-         as -v --64 -o CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o /tmp/ccecToEc.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_34464.dir/'
+         as -v --64 -o CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o /tmp/ccKtAWhf.s
         GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_3cfba
-        /usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_3cfba.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_34464
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34464.dir/link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=/usr/sbin/cc
+        COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
         Target: x86_64-pc-linux-gnu
         Configured with: ../gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror
@@ -984,14 +901,14 @@ events:
         gcc version 16.2.1 20260810 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3cfba' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3cfba.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjkdfKj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3cfba /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34464' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_34464.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz4w7BC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_34464 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.2.1 20260810
-        /usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjkdfKj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3cfba /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz4w7BC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_34464 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3cfba' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3cfba.'
-        /usr/sbin/cc -v -Wl,-v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -o cmTC_3cfba
-        make[1]: Leaving directory '/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34464' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_34464.'
+        /usr/bin/cc -v -Wl,-v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -o cmTC_34464
+        make[1]: Leaving directory '/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E'
         
       exitCode: 0
   -
@@ -1024,22 +941,22 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw']
+        ignore line: [Change Dir: '/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/sbin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3cfba/fast]
-        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_3cfba.dir/build.make CMakeFiles/cmTC_3cfba.dir/build]
-        ignore line: [make[1]: Entering directory '/home/dev/Projects/C-HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-aNH4Nw']
-        ignore line: [Building C object CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_34464/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_34464.dir/build.make CMakeFiles/cmTC_34464.dir/build]
+        ignore line: [make[1]: Entering directory '/home/dev/Projects/HTTP-Server/build/CMakeFiles/CMakeScratch/TryCompile-K7fs3E']
+        ignore line: [Building C object CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/sbin/cc]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3cfba.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_3cfba.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccecToEc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_34464.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_34464.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccKtAWhf.s]
         ignore line: [GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1053,16 +970,16 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: a48c0af3a2776f11d2f29c8a4f4a097f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3cfba.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o /tmp/ccecToEc.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_34464.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o /tmp/ccKtAWhf.s]
         ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_3cfba]
-        ignore line: [/usr/sbin/cmake -E cmake_link_script CMakeFiles/cmTC_3cfba.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_34464]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34464.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/sbin/cc]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Configured with: ../gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-gcc-major-version-only --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-fixincludes --disable-libssp --disable-libstdcxx-pch --disable-werror]
@@ -1071,13 +988,13 @@ events:
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3cfba' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3cfba.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjkdfKj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3cfba /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_34464' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_34464.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz4w7BC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_34464 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccjkdfKj.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccz4w7BC.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1093,7 +1010,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_3cfba] ==> ignore
+          arg [cmTC_34464] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -1105,7 +1022,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
           arg [-latomic_asneeded] ==> lib [atomic_asneeded]
@@ -1115,10 +1032,10 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjkdfKj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3cfba /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/sbin/ld]
-        link line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjkdfKj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3cfba /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/sbin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjkdfKj.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3cfba /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_3cfba.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
-        linker tool for 'C': /usr/sbin/ld -m;elf
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz4w7BC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_34464 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz4w7BC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_34464 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccz4w7BC.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_34464 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_34464.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
@@ -1143,6 +1060,6 @@ events:
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
-      Running the C compiler's linker: "/usr/sbin/ld" "-v"
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.47
 ...

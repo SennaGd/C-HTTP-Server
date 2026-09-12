@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/sbin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/sbin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev/Projects/C-HTTP-Server
+CMAKE_SOURCE_DIR = /home/dev/Projects/HTTP-Server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev/Projects/C-HTTP-Server/build
+CMAKE_BINARY_DIR = /home/dev/Projects/HTTP-Server/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/dev/Projects/C-HTTP-Server/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/usr/sbin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/usr/sbin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,16 +87,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/C-HTTP-Server/build/CMakeFiles /home/dev/Projects/C-HTTP-Server/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/HTTP-Server/build/CMakeFiles /home/dev/Projects/HTTP-Server/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/C-HTTP-Server/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/HTTP-Server/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/C-HTTP-Server/build/CMakeFiles /home/dev/Projects/C-HTTP-Server/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/HTTP-Server/build/CMakeFiles /home/dev/Projects/HTTP-Server/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/C-HTTP-Server/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/Projects/HTTP-Server/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -124,19 +124,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HttpServer
-
-# Build rule for target.
-HttpServer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HttpServer
-.PHONY : HttpServer
-
-# fast build rule for target.
-HttpServer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpServer.dir/build.make CMakeFiles/HttpServer.dir/build
-.PHONY : HttpServer/fast
-
-#=============================================================================
 # Target rules for targets named server
 
 # Build rule for target.
@@ -150,17 +137,56 @@ server/fast:
 .PHONY : server/fast
 
 #=============================================================================
-# Target rules for targets named parser
+# Target rules for targets named file_parser
 
 # Build rule for target.
-parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser
-.PHONY : parser
+file_parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file_parser
+.PHONY : file_parser
 
 # fast build rule for target.
-parser/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
-.PHONY : parser/fast
+file_parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/build
+.PHONY : file_parser/fast
+
+#=============================================================================
+# Target rules for targets named route_handler
+
+# Build rule for target.
+route_handler: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 route_handler
+.PHONY : route_handler
+
+# fast build rule for target.
+route_handler/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/route_handler.dir/build.make CMakeFiles/route_handler.dir/build
+.PHONY : route_handler/fast
+
+#=============================================================================
+# Target rules for targets named routes
+
+# Build rule for target.
+routes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 routes
+.PHONY : routes
+
+# fast build rule for target.
+routes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/routes.dir/build.make CMakeFiles/routes.dir/build
+.PHONY : routes/fast
+
+#=============================================================================
+# Target rules for targets named HttpServer
+
+# Build rule for target.
+HttpServer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HttpServer
+.PHONY : HttpServer
+
+# fast build rule for target.
+HttpServer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpServer.dir/build.make CMakeFiles/HttpServer.dir/build
+.PHONY : HttpServer/fast
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -186,29 +212,77 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpServer.dir/build.make CMakeFiles/HttpServer.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/parser/parser.o: src/parser/parser.c.o
-.PHONY : src/parser/parser.o
+src/parser/file_parser.o: src/parser/file_parser.c.o
+.PHONY : src/parser/file_parser.o
 
 # target to build an object file
-src/parser/parser.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/parser/parser.c.o
-.PHONY : src/parser/parser.c.o
+src/parser/file_parser.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/src/parser/file_parser.c.o
+.PHONY : src/parser/file_parser.c.o
 
-src/parser/parser.i: src/parser/parser.c.i
-.PHONY : src/parser/parser.i
+src/parser/file_parser.i: src/parser/file_parser.c.i
+.PHONY : src/parser/file_parser.i
 
 # target to preprocess a source file
-src/parser/parser.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/parser/parser.c.i
-.PHONY : src/parser/parser.c.i
+src/parser/file_parser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/src/parser/file_parser.c.i
+.PHONY : src/parser/file_parser.c.i
 
-src/parser/parser.s: src/parser/parser.c.s
-.PHONY : src/parser/parser.s
+src/parser/file_parser.s: src/parser/file_parser.c.s
+.PHONY : src/parser/file_parser.s
 
 # target to generate assembly for a file
-src/parser/parser.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/src/parser/parser.c.s
-.PHONY : src/parser/parser.c.s
+src/parser/file_parser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_parser.dir/build.make CMakeFiles/file_parser.dir/src/parser/file_parser.c.s
+.PHONY : src/parser/file_parser.c.s
+
+src/routes/route_handler.o: src/routes/route_handler.c.o
+.PHONY : src/routes/route_handler.o
+
+# target to build an object file
+src/routes/route_handler.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/route_handler.dir/build.make CMakeFiles/route_handler.dir/src/routes/route_handler.c.o
+.PHONY : src/routes/route_handler.c.o
+
+src/routes/route_handler.i: src/routes/route_handler.c.i
+.PHONY : src/routes/route_handler.i
+
+# target to preprocess a source file
+src/routes/route_handler.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/route_handler.dir/build.make CMakeFiles/route_handler.dir/src/routes/route_handler.c.i
+.PHONY : src/routes/route_handler.c.i
+
+src/routes/route_handler.s: src/routes/route_handler.c.s
+.PHONY : src/routes/route_handler.s
+
+# target to generate assembly for a file
+src/routes/route_handler.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/route_handler.dir/build.make CMakeFiles/route_handler.dir/src/routes/route_handler.c.s
+.PHONY : src/routes/route_handler.c.s
+
+src/routes/routes.o: src/routes/routes.c.o
+.PHONY : src/routes/routes.o
+
+# target to build an object file
+src/routes/routes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/routes.dir/build.make CMakeFiles/routes.dir/src/routes/routes.c.o
+.PHONY : src/routes/routes.c.o
+
+src/routes/routes.i: src/routes/routes.c.i
+.PHONY : src/routes/routes.i
+
+# target to preprocess a source file
+src/routes/routes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/routes.dir/build.make CMakeFiles/routes.dir/src/routes/routes.c.i
+.PHONY : src/routes/routes.c.i
+
+src/routes/routes.s: src/routes/routes.c.s
+.PHONY : src/routes/routes.s
+
+# target to generate assembly for a file
+src/routes/routes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/routes.dir/build.make CMakeFiles/routes.dir/src/routes/routes.c.s
+.PHONY : src/routes/routes.c.s
 
 src/server/server.o: src/server/server.c.o
 .PHONY : src/server/server.o
@@ -244,14 +318,22 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpServer"
-	@echo "... parser"
+	@echo "... file_parser"
+	@echo "... route_handler"
+	@echo "... routes"
 	@echo "... server"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/parser/parser.o"
-	@echo "... src/parser/parser.i"
-	@echo "... src/parser/parser.s"
+	@echo "... src/parser/file_parser.o"
+	@echo "... src/parser/file_parser.i"
+	@echo "... src/parser/file_parser.s"
+	@echo "... src/routes/route_handler.o"
+	@echo "... src/routes/route_handler.i"
+	@echo "... src/routes/route_handler.s"
+	@echo "... src/routes/routes.o"
+	@echo "... src/routes/routes.i"
+	@echo "... src/routes/routes.s"
 	@echo "... src/server/server.o"
 	@echo "... src/server/server.i"
 	@echo "... src/server/server.s"

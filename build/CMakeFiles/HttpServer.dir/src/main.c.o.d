@@ -1,6 +1,6 @@
 CMakeFiles/HttpServer.dir/src/main.c.o: \
- /home/dev/Projects/C-HTTP-Server/src/main.c /usr/include/stdc-predef.h \
- /home/dev/Projects/C-HTTP-Server/include/server.h \
+ /home/dev/Projects/HTTP-Server/src/main.c /usr/include/stdc-predef.h \
+ /home/dev/Projects/HTTP-Server/include/server.h \
  /usr/include/bits/sockaddr.h /usr/include/netinet/in.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -31,4 +31,4 @@ CMakeFiles/HttpServer.dir/src/main.c.o: \
  /usr/include/asm-generic/bitsperlong.h /usr/include/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
- /home/dev/Projects/C-HTTP-Server/include/parser.h
+ /home/dev/Projects/HTTP-Server/include/file_parser.h

@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/dev/Projects/C-HTTP-Server/CMakeLists.txt"
+  "/home/dev/Projects/HTTP-Server/CMakeLists.txt"
   "CMakeFiles/4.4.2/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.2/CMakeSystem.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
@@ -47,7 +47,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/HttpServer.dir/DependInfo.cmake"
   "CMakeFiles/server.dir/DependInfo.cmake"
-  "CMakeFiles/parser.dir/DependInfo.cmake"
+  "CMakeFiles/file_parser.dir/DependInfo.cmake"
+  "CMakeFiles/route_handler.dir/DependInfo.cmake"
+  "CMakeFiles/routes.dir/DependInfo.cmake"
+  "CMakeFiles/HttpServer.dir/DependInfo.cmake"
   )
